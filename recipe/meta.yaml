@@ -1,5 +1,5 @@
 {% set name = "opacus" %}
-{% set version = "1.1.2" %}
+{% set version = "1.1.3" %}
 
 
 package:
@@ -8,9 +8,9 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 6ca3fe46c260608e2a3b1508895319e421aca5484cbb15b45910802fda875bbc
+    sha256: 0e74a8e74a65ff35a0172db607323459ed0f3dcd40517856da77cb7abfa623ec
   - url: https://raw.githubusercontent.com/pytorch/opacus/v{{ version }}/dev_requirements.txt
-    sha256: 660581ef75367680176e84065f3e149a6a725d2a663b0ac97eb7ab1e458d78e1
+    sha256: 04c7b4253ec431892da69a0ecf3a9fa3f3614d24acb7ec1d8f3a4e1f64481559
 
 build:
   number: 0
