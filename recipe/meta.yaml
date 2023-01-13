@@ -25,7 +25,7 @@ requirements:
     - numpy >=1.15
     - python >=3.7
     - scipy >=1.2
-    - pytorch >=1.8
+    - pytorch >=1.13
     - opt_einsum >=3.3.0
 
 test:
