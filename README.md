@@ -1,11 +1,11 @@
-About opacus
-============
+About opacus-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opacus-feedstock/blob/main/LICENSE.txt)
 
 Home: https://opacus.ai
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opacus-feedstock/blob/main/LICENSE.txt)
 
 Summary: Train PyTorch models with Differential Privacy
 
