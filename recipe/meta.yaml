@@ -7,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
     sha256: 167b66a5f7d5313df396dda143f21d2303b82e554b6798b30675a04103afaeb6
   - url: https://raw.githubusercontent.com/pytorch/opacus/v{{ version }}/dev_requirements.txt
     sha256: 47ef24be8c82b0b5d3899c2476bbd547a8a06f8ca62a39a26aeb3f66ee3091d2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - numpy >=1.15,<2.0
-    - python >=3.7
+    - python >={{ python_min }}
     - scipy >=1.2
     - pytorch >=1.8
     - opt_einsum >=3.3.0
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://opacus.ai
